@@ -36,3 +36,19 @@ use this tutorial
 * install tensorflow and prerequisites
 [install tensorflow detection](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html#general-remarks)
 make sure to install tensorflow-gpu=1.4
+
+
+# install tensorflow-gpu=1.4
+pip install tensorflow-gpu==1.4
+# install dependencies
+pip install numpy==1.16
+pip install pillow, lxml, jupyter, matplotlib, opencv, cython
+
+
+get dataset
+wget https://md-datasets-cache-zipfiles-prod.s3.eu-west-1.amazonaws.com/zcsj2g2m4c-4.zip
+
+unzip files
+unzip zcsj2g2m4c-4.zip -d drone_set
+cd drone_set
+unzip Database1.zip
