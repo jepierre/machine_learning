@@ -28,9 +28,9 @@ import os
 import xml.etree.cElementTree as ET
 from PIL import Image
 
-ANNOTATIONS_DIR_PREFIX = "jp_database"
+ANNOTATIONS_DIR_PREFIX = "annotations_txt"
 
-DESTINATION_DIR = "converted_labels"
+DESTINATION_DIR = r"annotations/xmls"
 
 CLASS_MAPPING = {
     '0': 'drone'

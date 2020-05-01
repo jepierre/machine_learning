@@ -1,1 +1,1 @@
-<annotations><filename>2614.jpeg</filename><folder>images</folder><size><width>3840</width><height>2178</height><depth>3</depth></size></annotations>
+<annotations><filename>2614.jpeg</filename><folder>images</folder><size><width>1920</width><height>1090</height><depth>3</depth></size><object><name>drone</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>137.99999999904</xmin><ymin>196.00000000003496</ymin><xmax>478.99999999967997</xmax><ymax>436.999999999825</ymax></bndbox></object></annotations>

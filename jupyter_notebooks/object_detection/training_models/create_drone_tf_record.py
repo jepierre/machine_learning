@@ -47,7 +47,7 @@ from object_detection.utils import label_map_util
 flags = tf.app.flags
 #flags = tf.compat.v1.flags
 flags.DEFINE_string('data_dir', '', 'Root directory to raw PASCAL VOC dataset.')
-flags.DEFINE_string('output_dir', '', 'Path to directory to output TFRecords.') 
+flags.DEFINE_string('output_dir', 'tf_record', 'Path to directory to output TFRecords.') 
 #flags.DEFINE_string('annotations_dir', 'annotations',
 flags.DEFINE_string('label_map_path', 'annotations/label_map.pbtxt',
                     'Path to label map proto')
