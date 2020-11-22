@@ -28,9 +28,9 @@ import os
 import xml.etree.cElementTree as ET
 from PIL import Image
 
-ANNOTATIONS_DIR_PREFIX = "annotations_txt"
+ANNOTATIONS_DIR_PREFIX = "drone-net/norm_label_path"
 
-DESTINATION_DIR = r"annotations/xmls"
+DESTINATION_DIR = r"drone-net/annotations/xmls"
 
 CLASS_MAPPING = {
     '0': 'drone'
