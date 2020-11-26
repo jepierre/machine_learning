@@ -17,6 +17,7 @@ pip intall numpy==1.16
 
 use this tutorial
 [Training Custom Object Detector](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html#creating-tensorflow-records)
+and [this](https://towardsdatascience.com/custom-object-detection-using-tensorflow-from-scratch-e61da2e10087)
 
 
 ## Links
@@ -31,6 +32,7 @@ use this tutorial
 [racoon dataset](https://github.com/datitran/raccoon_dataset)
 [another one, train card detector](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10)
 [tf run locally](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/running_locally.md)
+[drone detection with maskrcnn](https://towardsdatascience.com/object-drones-detection-step-by-step-guide-on-mask-r-cnn-7bec0fb09a1)
 
 # to get started
 * install tensorflow and prerequisites
@@ -51,10 +53,15 @@ pip install pillow, lxml, jupyter, matplotlib, opencv, cython, contextlib2
 get dataset
 wget https://md-datasets-cache-zipfiles-prod.s3.eu-west-1.amazonaws.com/zcsj2g2m4c-4.zip
 
+or use [drone-net dataset](https://github.com/chuanenlin/drone-net)
+
 unzip files
 unzip zcsj2g2m4c-4.zip -d drone_set
 cd drone_set
 unzip Database1.zip
+
+use script to convert yolo to voc files
+[yolo_to_voc](https://gist.github.com/goodhamgupta/7ca514458d24af980669b8b1c8bcdafd)
 
 get ssd checkpoint
 wget download.tensorflow.org/models/object_detection/ssd_mobilenet_v2_coco_2018_03_29.tar.gz
@@ -70,6 +77,12 @@ cd cocoapi/PythonAPI
 make
 cp -r pycocotools <PATH_TO_TF>/TensorFlow/models/research/
 
+# convert yolo to voc
+
+# create tf records
+python create_drone_tf_record.py
+
+
 create temp folder
 mkdir temp
 export TMPDIR=temp
@@ -80,4 +93,9 @@ python model_main.py --alsologtostderr --model_dir=training/ --pipeline_config_p
 
 
 # export graph
-python .\export_inference_graph.py --input_type image_tensor --pipeline_config_path .\ssd_mobilenet_v2_coco.config --trained_checkpoint_prefix .\training\model.ckpt-3680 --output_directory trained-inference-graphs/output_inference_graph_v1.pb
+python .\export_inference_graph.py --input_type image_tensor --pipeline_config_path .\ssd_mobilenet_v2_coco.config --trained_checkpoint_prefix .\training\model.ckpt-3680 --output_directory trained-inference-graphs/gpu_output_inference_graph_v1.pb
+
+python export_inference_graph.py --input_type image_tensor --pipeline_config_path ssd_mobilenet_v2_coco.config --trained_checkpoint_prefix training/model.ckpt-<> --output_directory trained-inference-graphs/gpu_output_inference_graph_v2.pb
+
+
+[download youtube videos](http://www.youtube-video-downloader.xyz/download?video=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DXdlmoLAbbiQ)
