@@ -47,7 +47,7 @@ ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -L 8889:localhos
 pip install tensorflow-gpu==1.4
 # install dependencies
 pip install numpy==1.16
-pip install pillow, lxml, jupyter, matplotlib, opencv, cython, contextlib2
+pip install pillow, lxml, jupyter, matplotlib, opencv-python, cython, contextlib2
 
 
 get dataset
