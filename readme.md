@@ -1,3 +1,6 @@
+# machine_learning
+
+
 # Getting Started
 
 install anaconda
@@ -39,3 +42,7 @@ use 100 data points, 75 training, 25 test
 
 calculate R using pearson correlation coefficient
 
+# references
+[Machine Learning with Tensorflow](https://github.com/BinRoot/TensorFlow-Book/blob/master/ch09_cnn/Concept03_cnn.ipynb)
+
+[tensorflow with ros](https://github.com/osrf/tensorflow_object_detector)
