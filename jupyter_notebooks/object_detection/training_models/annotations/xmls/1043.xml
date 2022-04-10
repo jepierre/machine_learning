@@ -1,0 +1,1 @@
+<annotations><filename>1043.jpg</filename><folder>images</folder><size><width>347</width><height>280</height><depth>3</depth></size><object><name>drone</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>75.0000595</xmin><ymin>38.000060000000005</ymin><xmax>262.0000945</xmax><ymax>183.00002</ymax></bndbox></object></annotations>

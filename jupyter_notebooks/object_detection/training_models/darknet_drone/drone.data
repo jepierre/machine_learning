@@ -1,0 +1,5 @@
+classes = 1
+train = /nfs/student/j/jpierre/Documents/sandbox/machine_learning/jupyter_notebooks/object_detection/training_models/darknet_drone/train.txt
+valid = /nfs/student/j/jpierre/Documents/sandbox/machine_learning/jupyter_notebooks/object_detection/training_models/darknet_drone/test.txt
+names = /nfs/student/j/jpierre/Documents/sandbox/machine_learning/jupyter_notebooks/object_detection/training_models/darknet_drone/drone.names
+backup = /nfs/student/j/jpierre/Documents/sandbox/machine_learning/jupyter_notebooks/object_detection/training_models/darknet_drone/backup/
